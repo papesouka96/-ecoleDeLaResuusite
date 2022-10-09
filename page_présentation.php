@@ -13,7 +13,7 @@
 <div class="container-fluid">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-12 ">
                 <nav class="navbar navbar-expand-lg navbar-light bg-white">
                     <img src="image/logo2.png" alt="monlogo" class="logo">
                     <a class="navbar-brand" href="#">Ecole de la Reussite</a>
@@ -123,7 +123,7 @@
             </div>
             <div class="container-fluid">
            <div class="row">
-           <div class="col-lg-12 col-md-6 col-sm-12 text-center">
+           <div class="col-lg-12 col-md-6 col-sm-6 text-center">
                 <div class="card mt-5" >
             <div class="card-body">
             <h5 class="card-title text-info"><strong>Infirmerie</strong></h5>
