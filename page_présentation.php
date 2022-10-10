@@ -148,7 +148,7 @@
             <h6 class="card-subtitle mb-2 text-muted"></h6>
             <p class="card-text">Lorem ipsum dolor
             sit amet consectetur adipisici sit amet consectetur adipisicing elit. Voluptas cumque laboriosam sapiente beatae enim odio praesentium nam temporibus eius, neque autem reprehenderit dolore consequuntur, officia ullam possimus quos deleniti provident.</p>
-            <img src="image/restau.jpg" alt="restau"><br>
+            <img class="w-50" src="image/restau.jpg " alt="restau"><br>
             <a href="#" class="card-link " ><button class="btn text-dark">Savoir plus</button></a>
             </div>
             </div>
