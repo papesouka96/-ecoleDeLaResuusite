@@ -35,10 +35,10 @@ body{
 .sec3 .card{
     background-color:#1E434Eff !important;
     font-weight: bold;
-    color:d ;
-    height: 250px;
+    
+    height: 300px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
   }
   .sec4 .card{
     height: 340px;
@@ -46,7 +46,7 @@ body{
    /*  background-color:#1E434Eff; */
    /*  opacity: 0.8; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 15px;
   
   }
   .card-link .btn{
@@ -54,4 +54,7 @@ body{
    
   }
  /* Partie présentation */
- 
+  .card .beau  img{
+   
+    height: 200px !important;
+}

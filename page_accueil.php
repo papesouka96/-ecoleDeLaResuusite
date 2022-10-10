@@ -15,7 +15,7 @@
     <div class="container-fluid">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 ">
+                <div class="col-lg-12 col-md-12 col-sm-12">
                 <nav class="navbar navbar-expand-lg navbar-light bg-white">
                     <img src="image/logo2.png" alt="monlogo" class="logo">
                     <a class="navbar-brand" href="#">Ecole de la Reussite</a>
@@ -65,8 +65,9 @@
   </div>
 
 <!-- SEction 2 -->
+<div class="container-fluid">
 <div class="row sec2">
-    <div class="col-12">
+    <div class="col-lg-12 col-md-12 col-sm-12">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -90,15 +91,16 @@
         </div>
     </div>
 </div>
+</div>
 <!--ENd SEction 2 -->
 <!-- Section 3 -->
 
 <h1 class="titre text-center mt-3">Nos différentes Cycles </h1>
 <div class="row sec3">
     
-    <div class="col-1"> </div>
    
-    <div class="col-5"> 
+   
+    <div class="col-lg-6"> 
     <div class="card mt-5" >
             <div class="card-body">
             <h5 class="card-title text-dark"><strong>Primaire</strong></h5>
@@ -108,8 +110,8 @@
            
             </div>
      </div>
-    </div>
-    <div class="col-5"> 
+    </div><br>
+    <div class="col-lg-6"> 
     <div class="card mt-5" >
             <div class="card-body">
             <h5 class="card-title text-dark"><strong>Secondaire</strong></h5>
@@ -118,14 +120,15 @@
             <a href="#" class="card-link " ><button class="btn text-dark">Savoir plus</button></a>
             </div>
             </div>
-    </div>
-    <div class="col-1"> </div>
+    </div><br>
+  
 
    
 </div>
 <!-- End Section3 -->
 <!-- Section4 -->
-<h1 class="titre text-center mt-3">Présentation L'école</h1>
+<br><br><br><br>
+<h1 class="titre text-center mt-5">Présentation L'école</h1>
 <div class="row sec4">
 
     <!-- <div class="col-1"> </div> -->
@@ -151,14 +154,14 @@
 <!-- End Section4 -->
 <!-- Start Section 5 -->
 <div class="row mt-5">
-    <div class="col-12">
+    <div class="col-lg-12 col-md-12 col-sm-12">
         <h1 class="titre text-center">Les images de L'école</h1>
     </div>
-  
-    <div class="col-4 w-25">
+  <div class="row">
+    <div class="col-lg-6 col-md-12 col-sm-12 w-25">
     <img src="image/img3.jpg " alt="img3">
     </div>
-    <div class="col-6 ">
+    <div class="col-lg-6 col-md-12 col-sm-12 ">
     <div class="card-body">
             <h5 class="card-title text-dark"><strong>Secondaire</strong></h5>
             <h6 class="card-subtitle mb-2 text-muted"></h6>
@@ -168,8 +171,9 @@
             </div>
             </div>
     </div>
-
-    <div class="col-9 ">
+    </div>
+    <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 ">
     <div class="card-body">
             <h5 class="card-title text-dark"><strong>Primaire</strong></h5>
             <h6 class="card-subtitle mb-2 text-muted"></h6>
@@ -180,7 +184,7 @@
             </div>
             </div>
     </div>
-   
+    </div> 
    
 
 </div>

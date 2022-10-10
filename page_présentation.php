@@ -13,7 +13,7 @@
 <div class="container-fluid">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 ">
+                <div class="col-lg-12  col-md-12 col-sm-12">
                 <nav class="navbar navbar-expand-lg navbar-light bg-white">
                     <img src="image/logo2.png" alt="monlogo" class="logo">
                     <a class="navbar-brand" href="#">Ecole de la Reussite</a>
@@ -65,10 +65,14 @@
        <div class="container-fluid ">
             
           <div class="row sec2">
-          <div class="col-lg-12 col-md-6 col-sm-12">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+           
+               
+          
           <div class="card mt-5" >
             <div class="card-body">
-            <h5 class="card-title text-info text-center"><strong>A propos De l'école</strong></h5>
+            <h2 class="card-title text-info text-center"><strong>A propos De l'école</strong></h2>
+            <img class="beau d-block w-50 mx-auto " src="image/beau.webp " alt="monImage">
             <h6 class="card-subtitle mb-2 text-muted"></h6>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisici
             sit amet consectetur adipisicing elit. Voluptas cumque 
@@ -89,6 +93,7 @@
             
             <a href="#" class="card-link " ><button class="btn text-dark">Savoir plus</button></a>
             </div>
+          
             </div>
             </div>
             </div>
@@ -102,7 +107,8 @@
         <!-- Section 3 -->
         <div class="container-fluid">
             <div class="row ">
-                <div class="col-lg-12 col-md-6 col-sm-12 text-center">
+                <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                <h1 class="text-info text-center"><strong>Nos Services</strong></h1>
                 <div class="card mt-5" >
             <div class="card-body">
             <h5 class="card-title text-info"><strong>Transport</strong></h5>
@@ -123,7 +129,7 @@
             </div>
             <div class="container-fluid">
            <div class="row">
-           <div class="col-lg-12 col-md-6 col-sm-6 text-center">
+           <div class="col-lg-12 col-md-12 col-sm-6 text-center">
                 <div class="card mt-5" >
             <div class="card-body">
             <h5 class="card-title text-info"><strong>Infirmerie</strong></h5>
@@ -135,7 +141,7 @@
             </div>
             </div>
     </div>
-    <div class="col-lg-12 col-md-6 col-sm-12 text-center ">
+    <div class="col-lg-12 col-md-12 col-sm-12 text-center ">
                 <div class="card mt-5" >
             <div class="card-body">
             <h5 class="card-title text-info"><strong>Restauration</strong></h5>

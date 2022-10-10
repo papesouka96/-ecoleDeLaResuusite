@@ -12,7 +12,7 @@
    <div class="Container-fluid">
    <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12 ">
+                <div class="col-lg-12 col-md-12 col-sm-12">
                 <nav class="navbar navbar-expand-lg navbar-light bg-white">
                     <img src="image/logo2.png" alt="monlogo" class="logo">
                     <a class="navbar-brand" href="#">Ecole de la Reussite</a>
@@ -63,15 +63,15 @@
      <!-- Partie2 -->
      <div class="container-fluid">
         <div class="row bg-info">
-            <div class="col-lg-12 col-md-6 col-sm-12 text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
                 <h1 class="text-info"><strong>Primaire</strong></h1>
                 <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-12 col-sm-12">
                     
                     <img  src="image/class.jpg " alt="monImage">
 
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-lg-6 col-md-12 col-sm-12">
                                 <div class="card mt-5" >
                         <div class="card-body">
                         <h5 class="card-title text-dark"></h5>
@@ -99,21 +99,21 @@
 
                 </div>
             </div>
-            <div class="col-lg-12 col-md-6 col-sm-12 mt-5">
+            <div class="col-lg-12 col-md-12 col-sm-12 mt-5">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-12 col-sm-12">
                         <h5 class="text-info text-center">CI-CP</h5>
                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi voluptatibus atque veritatis error nostrum laboriosam assumenda accusantium nam eos pariatur itaque blanditiis corrupti fugit, quod, nesciunt similique voluptatum impedit suscipit?</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-12 col-sm-12">
                     <h5 class="text-info text-center">CE1-CE2</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium assumenda consequatur quibusdam sit molestiae sint autem tempore numquam deleniti, voluptatibus porro maxime nisi deserunt pariatur dicta dolorem. Consequatur, possimus quaerat!</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-12 col-sm-12">
                     <h5 class="text-info text-center">CM1</h5>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit beatae expedita labore distinctio voluptas tempora possimus. Fugiat, modi alias doloribus officia praesentium dignissimos veniam incidunt impedit dolore eveniet ullam deleniti?</p>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-3 col-md-12 col-sm-12">
                     <h5 class="text-info text-center">CM2</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, vitae non. Ducimus, autem consequuntur? Obcaecati iste eaque quis enim dolores ea dicta. Provident dolore quaerat alias nam molestiae laudantium iusto?</p>
                     </div>
@@ -192,7 +192,7 @@
 
       
        <div class="row text-center ">
-<div class="col-12 bg-dark text-white w-100">
+<div class="col-lg-12 col-md-12 col-sm-12 bg-dark text-white w-100">
     <footer>
         <p>By Elhadji Souka Diouf,Mame Fatima Ndiaye,Cheikh Diouf et Joséphine Diop</p>
     </footer>
