@@ -16,7 +16,7 @@
                 <div class="col-lg-12  col-md-12 col-sm-12">
                 <nav class="navbar navbar-expand-lg navbar-light bg-white">
                     <img src="image/logo2.png" alt="monlogo" class="logo">
-                    <a class="navbar-brand" href="#">Ecole de la Reussite</a>
+                    <a class="navbar-brand" href="#"></a>
                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -35,11 +35,11 @@
                     <a class="nav-link" href="#">SERVICES</a>
                 </li>
                 <li class="nav-item">
-                     <a class="nav-link mr-5" href="#">CONTACT</a>
+                     <a class="nav-link  mr-5" href="#">CONTACT</a>
                 </li>
-                 <div class="inscrire mr-5">  
+                 <div class="inscrire mr-5 ml-5">  
                 <li class="nav-item dropdown ">
-                 <a class="nav-link dropdown-toggle  "  href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <a class="nav-link dropdown-toggle "  href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 S'INSCRIRE
                 </a>
                 <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
