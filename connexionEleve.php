@@ -1,5 +1,3 @@
-
-
 <?php
 session_start();
 include_once('bd.php');
@@ -24,7 +22,7 @@ if(isset($_POST["login"],$_POST["motdepass"])){
         $_SESSION["autoriser"]="oui";
         $_SESSION["nomPrenom"]=strtoupper($tab[0]["nom"]." ".$tab[0]["prenom"]);
         $message.="connection reussi";
-        include('interfaceEleve.php');
+        
     }
     else{
         $message1="<li>Mauvais login ou mot de passe!</li>";
@@ -34,7 +32,6 @@ if(isset($_POST["login"],$_POST["motdepass"])){
 
 
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,19 +43,28 @@ if(isset($_POST["login"],$_POST["motdepass"])){
     <script src='main.js'></script>
 </head>
 <body>
+
     <div class="forminsc" id="formConn">
         <div class="form-text">Connexion</div>
+        <header>
+            <?php if(!empty($message)){ ?>
+        <div class="mess"><a href="page_eleve.php"><?php echo $message ?></a></div>
+        <?php } ?>
+        </header>
         <div class="form-saisie" id="formC-saisie">
-            <form method="" action="">
+            <form method="post" action="">
               <span>Nom d'utilisateur</span>
               <input type="text" name="login"  placeholder="">
 
               <span>Mot de passe</span>
-              <input type="password" name="motdepass"  placeholder="">
+              <input type="password" name="motdepass"   placeholder="">
                         
               <input class="btnConn" type="submit" name="valider" value="Se connecter" ><br>
               Vous n'etes pas inscrit? <a href="insc.php">Inscription</a>
             </form>
+            <?php if(!empty($message1)){ ?>
+<div id="message1"><?php echo $message1 ?></div>
+<?php } ?>
         </div>
     </div>
 </body>
