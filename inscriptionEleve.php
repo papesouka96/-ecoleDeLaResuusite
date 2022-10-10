@@ -84,7 +84,7 @@ if (isset($valider)) {
         <div class="form-text">Inscription</div>
         <?php
         if(!empty($message1)){ ?>
-         <a href="connect.php" id="Alerte"><?php echo $message1 ?> </a>
+         <a href="connexioEleve.php" id="Alerte"><?php echo $message1 ?> </a>
          <?php }
         ?>
         <div class="form-saisie">
