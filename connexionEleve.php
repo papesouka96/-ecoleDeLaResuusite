@@ -1,54 +1,40 @@
+
+
 <?php
-@$motdepass=$_POST["motdepass"];
-@$login=$_POST["login"];
-@$repass=$_POST["repass"];
 session_start();
-include_once('include.php');
-if(!empty($_POST))
-{
-    extract($_POST);
-    $valid=true;
-    $login=htmlspecialchars(trim($login));
-    $passwor=trim($motdepass);
+include_once('bd.php');
+if(isset($_POST["login"],$_POST["motdepass"])){
+    
+    
+    @$motdepass=$_POST["motdepass"];
+    @$login=$_POST["login"];
+   // @$repass=$_POST["repass"];
+    $res=$pdo->prepare("select * from eleve where login=:login and motdepass=:motdepass ");
+    $res->setFetchMode(PDO::FETCH_ASSOC);
+   // $res->execute(array($login,$motdepass));
+   $res->execute(array(
+        "login" => @$login,
+        "motdepass" => @$motdepass
+   ));
 
-    if(empty($login))
+    $tab=$res->fetchAll();
+    
+    if(count($tab)>0)
     {
-        $valid=false;
-        $error_login= "renseigne un nom d'uutilisteur";
+        $_SESSION["autoriser"]="oui";
+        $_SESSION["nomPrenom"]=strtoupper($tab[0]["nom"]." ".$tab[0]["prenom"]);
+        $message.="connection reussi";
+        include('interfaceEleve.php');
     }
-
-    if(empty($motdepass))
-    {
-        $valid=false;
-        $error_mdp= "renseigne un mot de passe";
+    else{
+        $message1="<li>Mauvais login ou mot de passe!</li>";
+        
     }
-
-    $req= $DB->query('select * from eleve where login= :login and motdepass= :motdepass', array('login'=>$login, 'motdepass'=> crypt($motdepass,'fffffffytyutghgjtyghj')));
-    $req =$req ->fetch();
-
-    if(!$req[$login])
-    {
-        $valid=false;
-        $error_compt="votre pseudo ou mot de passe ne correspondent pas";
-    }
-
-    if($valid)
-    {
-        $_SESSION['idEleve'] = $req['idEleve'];
-        $_SESSION['login'] = $req['login'];
-        header('Location: interfaceEleve.php');
-        exit();
-
-
-    }
-
-
-
 }
 
 
-
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -65,13 +51,10 @@ if(!empty($_POST))
         <div class="form-saisie" id="formC-saisie">
             <form method="" action="">
               <span>Nom d'utilisateur</span>
-              <input type="text" name="login" value="<?php echo $login?>"  placeholder="">
+              <input type="text" name="login"  placeholder="">
 
               <span>Mot de passe</span>
-              <input type="password" name="motdepass" value="<?php echo $motdepass?>"  placeholder="">
-
-              <span>Confirmez</span>
-              <input type="password" name="repass" value="<?php echo $repass?>" placeholder="meme mot de pass">
+              <input type="password" name="motdepass"  placeholder="">
                         
               <input class="btnConn" type="submit" name="valider" value="Se connecter" ><br>
               Vous n'etes pas inscrit? <a href="insc.php">Inscription</a>
