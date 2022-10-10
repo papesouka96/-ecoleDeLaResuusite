@@ -43,16 +43,24 @@
                 </a>
                 <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="#">Eleve</a>
-                <a class="dropdown-item" href="#">Employer</a>
+                <a class="dropdown-item" href="inscriptionProf.php">Employer</a>
               
                 </div>
                 </li>
                 </div>
-            <div class="connecte">    
-                  <li class="nav-item">
-                    <a class="nav-link " href="#">SE CONNECTER</a>
-                  </li>
-            </div>  
+                <div class="inscrire mr-5">  
+                <li class="nav-item dropdown ">
+                 <a class="nav-link dropdown-toggle  "  href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SE CONNECTER
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Eleve</a>
+                <a class="dropdown-item" href="inscriptionProf.php">Employer</a>
+              
+                </div>
+                </li>
+                </div>
+            
       
             </ul>
             </div>
@@ -200,5 +208,8 @@
 </div>
   <!-- End Footer -->
    </div>
+     <?php
+		include("codejs.php")
+	?>
 </body>
 </html>

@@ -1,4 +1,9 @@
+     
         <?php
+		include("nav.php");
+		?>  
+
+	   <?php
           ini_set("display_errors", "1");
           error_reporting(E_ALL);
           $email = "thomas@waytolearnx.com";
@@ -27,7 +32,7 @@
 		if(empty($message)){
 		//////////////////////////////<<<<<< CONNECTION >>>>>>>>>//////////////////////////////////		
 		try{
-			$pdo=new PDO("mysql:host=localhost;dbname=papa","root","");
+			$pdo=new PDO("mysql:host=localhost;dbname=bd-ecole","sosso","abc");
 		}
 		catch(PDOException $e){
 			echo $e->getMessage();
@@ -95,8 +100,12 @@
 		<?php } ?>
 		</form>
 
-		</div>
+		</div><br><br>
 	
-        
+        <?php
+		include("footer.php");
+		?>
+
+		
 	</body>
 </html>

@@ -13,6 +13,9 @@
 
 <body>
   <div class="container-fluid">
+    <?php
+    include("nav.php");
+    ?>
     <!--div class="container-fluid">
       <div class="row">
         <div class="col-12">

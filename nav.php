@@ -9,6 +9,8 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
+    
+
 
 
 
@@ -34,10 +36,10 @@
                     <a class="nav-link" href="page_pedagogie.php">PEDAGOGIE</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">SERVICES</a>
+                    <a class="nav-link" href="service.php">SERVICES</a>
                 </li>
                 <li class="nav-item">
-                     <a class="nav-link mr-5" href="#">CONTACT</a>
+                     <a class="nav-link mr-5" href="contact.php">CONTACT</a>
                 </li>
                  <div class="inscrire mr-5">  
                 <li class="nav-item dropdown ">
@@ -46,16 +48,23 @@
                 </a>
                 <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="#">Eleve</a>
-                <a class="dropdown-item" href="#">Employer</a>
+                <a class="dropdown-item" href="inscriptionProf.php">Employer</a>
               
                 </div>
                 </li>
                 </div>
-            <div class="connecte">    
-                  <li class="nav-item">
-                    <a class="nav-link " href="#">SE CONNECTER</a>
-                  </li>
-            </div>  
+                <div class="inscrire mr-5">  
+                <li class="nav-item dropdown ">
+                 <a class="nav-link dropdown-toggle  "  href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SE CONNECTER
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Eleve</a>
+                <a class="dropdown-item" href="inscriptionProf.php">Employer</a>
+              
+                </div>
+                </li>
+                </div>
       
             </ul>
             </div>
@@ -63,3 +72,7 @@
          </div>
      </div>
   </div>
+  <?php
+  include("codejs.php");
+  ?>
+</body>

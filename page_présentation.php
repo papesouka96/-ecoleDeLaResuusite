@@ -44,16 +44,23 @@
                 </a>
                 <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
                 <a class="dropdown-item" href="#">Eleve</a>
-                <a class="dropdown-item" href="#">Employer</a>
+                <a class="dropdown-item" href="inscriptionProf.php">Employer</a>
               
                 </div>
                 </li>
                 </div>
-            <div class="connecte">    
-                  <li class="nav-item">
-                    <a class="nav-link " href="#">SE CONNECTER</a>
-                  </li>
-            </div>  
+                <div class="inscrire mr-5">  
+                <li class="nav-item dropdown ">
+                 <a class="nav-link dropdown-toggle  "  href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SE CONNECTER
+                </a>
+                <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">Eleve</a>
+                <a class="dropdown-item" href="inscriptionProf.php">Employer</a>
+              
+                </div>
+                </li>
+                </div>  
       
             </ul>
             </div>
@@ -174,5 +181,8 @@
 
     </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
 </body>
 </html>
