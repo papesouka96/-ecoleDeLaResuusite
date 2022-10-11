@@ -52,7 +52,7 @@
                 <h1 class="text-info text-center">Bienvenue Chers Employé</h1>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-4">
-                    <img class="w-100" src="image/employe.jpg " alt="img3">
+                    <img class="w-100" src="image/schoolfgs.jpg " alt="img3">
                     </div>
 <!-- 
                     <div class="col-lg-4 col-md-12 col-sm-4">

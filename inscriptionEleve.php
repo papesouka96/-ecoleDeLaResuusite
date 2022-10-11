@@ -2,6 +2,7 @@
 ini_set("display_errors", "1");
 error_reporting(E_ALL);
 $email = "thomas@waytolearnx.com";
+ include ("nav1.php");
 
 @$nom=$_POST["nom"];
 @$prenom=$_POST["prenom"];

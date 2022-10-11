@@ -1,5 +1,6 @@
 <?php
 session_start();
+ include ("nav1.php");
 include_once('bd.php');
 if(isset($_POST["login"],$_POST["motdepass"])){
     

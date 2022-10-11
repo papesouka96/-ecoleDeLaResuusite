@@ -1,3 +1,4 @@
+<?php include ("nav1.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,67 +13,9 @@
 
 
 
-    <div class="container-fluid">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                    <img src="image/logo2.png" alt="monlogo" class="logo">
-                    <a class="navbar-brand" href="#"></a>
-                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav link">
-                 <li class="nav-item active">
-                    <a class="nav-link" href="page_accueil.php">ACCUEIL<span class="sr-only">(current)</span></a>
-                 </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="page_présentation.php">PRESENTATIONS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="page_pedagogie.php">PEDAGOGIE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">SERVICES</a>
-                </li>
-                <li class="nav-item">
-                     <a class="nav-link  mr-5" href="#">CONTACT</a>
-                </li>
-                 <div class="inscrire mr-5 ml-5">  
-                <li class="nav-item dropdown ">
-                 <a class="nav-link dropdown-toggle  "  href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                S'INSCRIRE
-                </a>
-                <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Eleve</a>
-                <a class="dropdown-item" href="inscriptionProf.php">Employer</a>
-              
-                </div>
-                </li>
-                </div>
-                <div class="inscrire mr-5">  
-                <li class="nav-item dropdown ">
-                 <a class="nav-link dropdown-toggle  "  href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                SE CONNECTER
-                </a>
-                <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Eleve</a>
-                <a class="dropdown-item" href="inscriptionProf.php">Employer</a>
-              
-                </div>
-                </li>
-                </div>
-      
-            </ul>
-            </div>
-            </nav>
-         </div>
-     </div>
-  </div>
 
 <!-- SEction 2 -->
-<div class="container-fluid">
+<div class="container-fluid mt-5">
 <div class="row sec2">
     <div class="col-lg-12 col-md-12 col-sm-12">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >

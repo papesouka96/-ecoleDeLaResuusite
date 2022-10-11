@@ -1,5 +1,4 @@
         <?php
-		include ("location:nav.php");
           ini_set("display_errors", "1");
           error_reporting(E_ALL);
           $email = "thomas@waytolearnx.com";
@@ -58,7 +57,7 @@
          <link rel="stylesheet" href="styleProf.css"> 
 
 	</head>
-	<header><?php include('nav.php'); ?></header>
+	<header><?php include("nav1.php"); ?></header>
 	<body>
 		
 		<div class="containt">
