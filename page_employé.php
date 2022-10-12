@@ -23,7 +23,7 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav link">
                  <li class="nav-item active">
-                    <a class="nav-link mr-5" href="mon_accueil.php">ACCUEIL<span class="sr-only">(current)</span></a>
+                    <a class="nav-link mr-5" href="pageacceuil.php">ACCUEIL<span class="sr-only">(current)</span></a>
                  </li>
                  <div class="inscrire mr-5">  
                 <li class="nav-item dropdown ">
@@ -52,7 +52,7 @@
                 <h1 class="text-info text-center">Bienvenue Chers Employé</h1>
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-4">
-                    <img class="w-100" src="image/employe.jpg " alt="img3">
+                    <img class="w-100" src="image/schoolfgs.jpg " alt="img3">
                     </div>
 <!-- 
                     <div class="col-lg-4 col-md-12 col-sm-4">
