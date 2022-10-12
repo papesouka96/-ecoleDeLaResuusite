@@ -42,7 +42,7 @@
 				else{ 
 					$ins=$pdo->prepare("insert into employe(date,nom,prenom,email,statut,adresse,login,pass,daten) values(now(),?,?,?,?,?,?,?,?)");
 					$ins->execute(array($nom,$prenom,$email,$statut,$adresse,$login,$pass,$daten));
-					$message1.="Inscription  reussi veuillez Cliquez ici pour se connecter";
+					header("location:loginprof.php");
 				} 
 			}
 		}

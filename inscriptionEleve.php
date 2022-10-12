@@ -63,10 +63,11 @@ if (isset($valider)) {
         } else {
             $ins=$pdo->prepare("insert into eleve(date,nom,prenom,daten,lieun,classe,cycle,login,motdepass,email) values(now(),?,?,?,?,?,?,?,?,?)");
             $ins->execute(array($nom,$prenom,$daten,$lieun,$classe,$cycle,$login,$motdepass,$email));
-            $message1.="Bien inscrit, connectez-vous";
+            header("location:connexionEleve.php");
         }
     }
 }
+?>
 ?>
 
 <!DOCTYPE html>

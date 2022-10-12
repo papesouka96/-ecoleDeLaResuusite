@@ -11,8 +11,8 @@
 <body>
 <?php include ("nav1.php");?>
      <!-- Partie2 -->
-     <div class="container-fluid">
-        <div class="row bg-info">
+     <div class="container-fluid mr-5">
+        <div class="row bg-info ">
             <div class="col-lg-12 col-md-12 col-sm-12 text-center">
                 <h1 class="text-info"><strong>Primaire</strong></h1>
                 <div class="row">

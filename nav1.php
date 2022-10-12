@@ -33,10 +33,10 @@
                     <a class="nav-link" href="page_pedagogie.php">PEDAGOGIE</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">SERVICES</a>
+                    <a class="nav-link" href="service.php">SERVICES</a>
                 </li>
                 <li class="nav-item">
-                     <a class="nav-link  mr-5" href="#">CONTACT</a>
+                     <a class="nav-link  mr-5" href="contact.php">CONTACT</a>
                 </li>
                  <div class="inscrire mr-5 ml-5">  
                 <li class="nav-item dropdown ">

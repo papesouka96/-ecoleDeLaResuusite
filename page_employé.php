@@ -23,7 +23,7 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav link">
                  <li class="nav-item active">
-                    <a class="nav-link mr-5" href="mon_accueil.php">ACCUEIL<span class="sr-only">(current)</span></a>
+                    <a class="nav-link mr-5" href="pageacceuil.php">ACCUEIL<span class="sr-only">(current)</span></a>
                  </li>
                  <div class="inscrire mr-5">  
                 <li class="nav-item dropdown ">

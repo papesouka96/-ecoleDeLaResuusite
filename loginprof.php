@@ -24,7 +24,7 @@
 		else{
 			$_SESSION["autoriser"]="oui";
 			$_SESSION["nomPrenom"]=strtoupper($tab[0]["nom"]." ".$tab[0]["prenom"]);
-			$message.="connection reussi";
+			header("location:page_employé.php");
 		}
 	}
 ?>
