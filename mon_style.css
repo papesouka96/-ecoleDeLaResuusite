@@ -59,3 +59,11 @@ body{
    
     height: 200px !important;
 }
+/* Partie Enseignant */
+/* .container-fluid.ens{
+background-image:url(image/img1.jpg);
+} */
+.ens img{
+  border:1px solid black;
+  border-radius: 10px;
+}
