@@ -61,7 +61,7 @@ if(isset($_POST["login"],$_POST["motdepass"])){
               <input type="password" name="motdepass"   placeholder="">
                         
               <input class="btnConn" type="submit" name="valider" value="Se connecter" ><br>
-              Vous n'etes pas inscrit? <a href="insc.php">Inscription</a>
+              Vous n'etes pas inscrit? <a href="inscriptionEleve.php">Inscription</a>
             </form>
             <?php if(!empty($message1)){ ?>
 <div id="message1"><?php echo $message1 ?></div>
