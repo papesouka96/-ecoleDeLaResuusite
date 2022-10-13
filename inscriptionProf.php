@@ -62,7 +62,7 @@
 		
 		<div class="containt">
 		
-                       <h5>Inscription Employé</h5>
+                       <h2>Inscription Employé</h2>
 					   <?php 
         if(!empty($message1)){ ?>
 		<a href="login.php" id="message"><?php echo $message1 ?> </a>
