@@ -84,11 +84,11 @@ if (isset($valider)) {
         <div class="form-text">Inscription</div>
         <?php
         if(!empty($message1)){ ?>
-         <a href="connexioEleve.php" id="Alerte"><?php echo $message1 ?> </a>
+         <a href="connect.php" id="Alerte"><?php echo $message1 ?> </a>
          <?php }
         ?>
         <div class="form-saisie">
-            <form method="post" action="">
+            <form method="post" action="" >
                 <div class="cntnaireFormulaire">
                     <div class="form">
                         <div class="f1">
@@ -102,7 +102,14 @@ if (isset($valider)) {
                             <input type="date" name="daten" value="<?php echo $daten?>" placeholder="03-08-1980">
 
                             <span class="label">Email</span>
-                            <input type="email" name="email" value= "<?php echo $email ?>"/>
+                            <input type="email" name="email" value= "<?php echo $email ?>" placeholder=" Exple: xyz@abc.com"/>
+
+                            <span>Cycle <br>
+                                <select class="selection" name="cycle" >
+                                    <option value="primaire" selected><p>primaire</p></option>
+                                    <option value="secondaire"><p>secondaire</p></option>
+                                </select>
+                            </span>
                         </div>
                         <div class="f1">
                             <span>Lieu de Naissance</span>
@@ -112,28 +119,22 @@ if (isset($valider)) {
                             <input type="text" name="classe" value="<?php echo $classe?>" placeholder="Ex TS2">
 
                             <span>Nom d'utilisateur</span>
-                            <input type="text" name="login" value="<?php echo $login?>" placeholder="Ex kant">
+                            <input type="text" name="login" value="<?php echo $login?>" placeholder="Exple: kant">
 
                             <span>mot de pass</span>
-                            <input type="password" name="motdepass" value="<?php echo $motdepass?>" placeholder="Ex TS2">
+                            <input type="password" name="motdepass" value="<?php echo $motdepass?>" placeholder="alphanumérique">
 
+                            <input class="btnInsc" type="submit" name="valider" value="S'inscrire" >
                         </div>
+                        
+                    </div>
+                    <div>
+                                 Déja inscrit? <a href="connect.php">Se connecter</a><br>
+                                <?php if(!empty($message)){ ?>
+                        <div id="ALERT_Existance"><?php echo $message ?></div>
+                                <?php } ?>
                     </div>
                 </div>
-                <div class="contBouValidation">
-                 <span>Cycle <br>
-
-                    <select class="selection" name="cycle" >
-                        <option value="primaire" selected><p>primaire</p></option>
-                        <option value="secondaire"><p>secondaire</p></option>
-                    </select>
-                 </span>
-                 <input class="btnInsc" type="submit" name="valider" value="S'inscrire" >
-                </div>
-                Déja inscrit? <a href="connect.php">Se connecter</a><br>
-                <?php if(!empty($message)){ ?>
-                <div id="ALERT_Existance"><?php echo $message ?></div>
-                <?php } ?>
             </form>
         </div>
     </div>
