@@ -16,7 +16,16 @@ body{
      font-family:'Times New Roman', Times, serif;
      font-weight: bold;
  }
- 
+  
+  a:hover{
+  /*  background-color:burlywood;  */
+  text-decoration: underline;
+}  
+
+
+
+
+
  img.logo{
      height: 160px !important;
  }
@@ -58,4 +67,12 @@ body{
   .card .beau  img{
    
     height: 200px !important;
+}
+/* Partie Enseignant */
+/* .container-fluid.ens{
+background-image:url(image/img1.jpg);
+} */
+.ens img{
+  border:1px solid black;
+  border-radius: 10px;
 }

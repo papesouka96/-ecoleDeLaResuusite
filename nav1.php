@@ -123,7 +123,7 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav link">
                  <li class="nav-item active">
-                    <a class="nav-link" href="pageacceuil.php">ACCUEIL<span class="sr-only">(current)</span></a>
+                    <a class="nav-link " href="pageacceuil.php">ACCUEIL<span class="sr-only">(current)</span></a>
                  </li>
                  <li class="nav-item">
                     <a class="nav-link" href="page_présentation.php">PRESENTATIONS</a>
@@ -143,8 +143,8 @@
                 S'INSCRIRE
                 </a>
                 <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="inscriptionEleve.php">Eleve</a>
-                <a class="dropdown-item" href="inscriptionProf.php">Employer</a>
+                <a class="dropdown-item" href="inscriptionEleve.php"><strong> Eleve </strong> </a>
+                <a class="dropdown-item" href="inscriptionProf.php"><strong>Employer </strong></a>
               
                 </div>
                 </li>
@@ -155,8 +155,8 @@
                 SE CONNECTER
                 </a>
                 <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="connexionEleve.php">Eleve</a>
-                <a class="dropdown-item" href="loginprof.php">Employer</a>
+                <a class="dropdown-item" href="connexionEleve.php"><strong>Eleve </strong></a>
+                <a class="dropdown-item" href="loginprof.php"><strong>Employer </strong></a>
               
                 </div>
                 </li>
