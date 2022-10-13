@@ -1,5 +1,6 @@
 <?php
 session_start();
+ include ("nav1.php");
 include_once('bd.php');
 if(isset($_POST["login"],$_POST["motdepass"])){
     
@@ -21,8 +22,7 @@ if(isset($_POST["login"],$_POST["motdepass"])){
     {
         $_SESSION["autoriser"]="oui";
         $_SESSION["nomPrenom"]=strtoupper($tab[0]["nom"]." ".$tab[0]["prenom"]);
-        // $message.="connection reussi";
-        header("Location: page_eleve.php");
+        header("location:page_eleve.php");
         
     }
     else{
@@ -57,7 +57,7 @@ if(isset($_POST["login"],$_POST["motdepass"])){
               <input type="password" name="motdepass"   placeholder="">
                         
               <input class="btnConn" type="submit" name="valider" value="Se connecter" ><br>
-              Vous n'etes pas inscrit? <a href="insc.php">Inscription</a>
+              Vous n'etes pas inscrit? <a href="inscriptionEleve.php">Inscription</a>
             </form>
             <?php if(!empty($message1)){ ?>
 <div id="message1"><?php echo $message1 ?></div>

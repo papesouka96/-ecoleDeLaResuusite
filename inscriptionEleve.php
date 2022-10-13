@@ -2,6 +2,7 @@
 ini_set("display_errors", "1");
 error_reporting(E_ALL);
 $email = "thomas@waytolearnx.com";
+ include ("nav1.php");
 
 @$nom=$_POST["nom"];
 @$prenom=$_POST["prenom"];
@@ -53,19 +54,20 @@ if (isset($valider)) {
             echo $e->getMessage();
         }
 
-        $req=$pdo->prepare("select  idEleve from eleve where email=? limit 1");
+        $req=$pdo->prepare("SELECT  ideleve FROM eleve WHERE email=? limit 1");
         $req->setFetchMode(PDO::FETCH_ASSOC);
         $req->execute(array($email));
         $tab=$req->fetchAll();
         if (count($tab)>0) {
             $message="<li>Email existe déjà!</li>";
         } else {
-            $ins=$pdo->prepare("insert into eleve(date,nom,prenom,daten,lieun,classe,cycle,login,motdepass,email) values(now(),?,?,?,?,?,?,?,?,?)");
+            $ins=$pdo->prepare("insert into eleve(date,nom,prenom,daten,lieun,classe,cycle,login,motdepass,email,etat) values(now(),?,?,?,?,?,?,?,?,?,1)");
             $ins->execute(array($nom,$prenom,$daten,$lieun,$classe,$cycle,$login,$motdepass,$email));
-            $message1.="Bien inscrit, connectez-vous";
+            header("location:connexionEleve.php");
         }
     }
 }
+?>
 ?>
 
 <!DOCTYPE html>
