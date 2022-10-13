@@ -40,7 +40,7 @@
 				if(count($tab)>0)
 					$message="<li>Email existe déjà!</li>";
 				else{ 
-					$ins=$pdo->prepare("insert into employe(date,nom,prenom,email,statut,adresse,login,pass,daten) values(now(),?,?,?,?,?,?,?,?)");
+					$ins=$pdo->prepare("insert into employe(date,nom,prenom,email,statut,adresse,login,pass,daten,etat) values(now(),?,?,?,?,?,?,?,?,0)");
 					$ins->execute(array($nom,$prenom,$email,$statut,$adresse,$login,$pass,$daten));
 					header("location:loginprof.php");
 				} 
