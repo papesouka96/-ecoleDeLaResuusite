@@ -23,11 +23,13 @@ body{
 
 form{
     margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
 }
 .forminsc
 {
-    width: 780px;
-    height: 550px;
+    width: 800px;
+    height: 590px;
     background-color: rgba(0,0,0,0.7);
     position: absolute;
     margin: auto;
@@ -36,9 +38,8 @@ form{
     right: 0;
     bottom: 0;
     padding: 30px;
-    border-radius: 5px;
-    border-top: 4px solid #48cb49;
-    border-bottom: 4px solid #48cb49;
+    /* border-top: 4px solid #48cb49;
+    border-bottom: 4px solid #48cb49; */
     box-shadow:  0 0 10px #000;
     border-radius: 10px;
 }
@@ -56,7 +57,7 @@ form{
 
 .form-saisie{
     width: 700px;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
 
@@ -65,8 +66,10 @@ form{
     font-size: 32px;
     font-weight: 600;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
+
+
 
 .form-saisie span
 {
@@ -145,6 +148,8 @@ form{
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    margin-left: 56px;
+   
     
 }
 
@@ -152,10 +157,20 @@ form{
 {
     border-bottom: 4px solid blue;
     border-top: 4px solid blue;
+    height: 500px;
+}
+
+.formc-text
+{
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 25px;
+    margin-bottom: 40px;
 }
 .btnConn
 {
-    margin-left: 100px;
+    margin-left: 140px;
 }
 
 h4{
@@ -168,13 +183,28 @@ h4{
 /*Les messages     */
 #Alerte{
     text-align:center;
-    background-color: yellow;
+    background-color: green;
     border-radius: 10px;
     margin-left: 16px;
     color: #fff;   
-    height: 30px;
+    height: 80px;
+    padding: auto;
 
     }
+
+    #Alerte:hover{
+
+        background-color: orange;
+
+    
+        }
+    
+
+    a{
+        text-decoration: none;
+    }
+
+
     .mess{
     text-align:center;
     background-color:none;
@@ -217,3 +247,33 @@ h4{
     color: white;
     }
  */
+
+ /* LA GESTION DE LA RESPONSIVITe*/
+
+ @media only screen and (max-width: 290px)
+ {
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    
+    }
+
+    .forminsc
+    {
+        height: 940px;
+    }
+
+    .form-saisie input
+    {
+    width: 100%;
+
+    } 
+
+    .form-text
+    {
+        text-align: left;
+    }
+
+    
+ }
