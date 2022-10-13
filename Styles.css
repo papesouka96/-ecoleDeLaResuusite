@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background: url(imges/ImEcol4.jpeg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.form{
+    display: flex;
+    width: 700px;
+    gap: 15px;
+
+}
+
+form{
+    margin-bottom: 10px;
+}
+.forminsc
+{
+    width: 780px;
+    height: 550px;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 30px;
+    border-radius: 5px;
+    border-top: 4px solid #48cb49;
+    border-bottom: 4px solid #48cb49;
+    box-shadow:  0 0 10px #000;
+    border-radius: 10px;
+}
+
+#formConn
+{
+    width: 400px;
+    
+}
+
+#formC-saisie
+{
+    width: 320px;
+}
+
+.form-saisie{
+    width: 700px;
+    margin-top: 70px;
+}
+
+
+.form-text
+{
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.form-saisie span
+{
+ font-size: 14px;
+ font-weight: bold;
+}
+.form-saisie input
+{
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    background-color: #1f1f22;
+    color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border: 0.4px solid #fff;
+    border-radius: 6px;
+}
+
+
+.form-saisie input[type="submit"].btnInsc
+{
+    width: 50%;
+    background-color: #48cb49;
+    font-size: 18px;
+    color: #fff;
+    margin: 209 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.form-saisie input[type="submit"].btnInsc:hover
+{
+    background-color: orange;
+    color: #ececf0;
+    transform:0.3s translateY(-6);
+}
+.form-saisie a
+{
+ font-size: 14px;
+ font-weight: bold;
+ color: #1d4adb;/*orange;*/
+
+}
+
+.contBouValidation
+{
+    display: flex;
+    gap: 140px;
+
+}
+
+.selection
+{
+    height: 32px;
+    width: 190px;
+    background-color: #1f1f22;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+/*Ici commence la mise en forme du formulaire de connexion*/
+
+.form-saisie input[type="submit"].btnConn
+{
+    width: 50%;
+    background-color: blue;
+    font-size: 18px;
+    color: #fff;
+    margin: 20 0;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+#formConn
+{
+    border-bottom: 4px solid blue;
+    border-top: 4px solid blue;
+}
+.btnConn
+{
+    margin-left: 100px;
+}
+
+h4{
+    color:#fff;
+    font-size:17px;
+    margin-top:-10px;
+    
+}
+
+/*Les messages     */
+#Alerte{
+    text-align:center;
+    background-color: yellow;
+    border-radius: 10px;
+    margin-left: 16px;
+    color: #fff;   
+    height: 30px;
+
+    }
+    .mess{
+    text-align:center;
+    background-color:none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    width: 140px;
+    border-radius: 40px;
+    cursor: pointer;
+    /* position: relative;
+    top: -1px;
+    left: 400px; */
+
+    }
+
+#ALERT_Existance
+{
+    margin-top: 7px;
+    margin-left: 19px;
+    list-style-type: none;
+}
+   
+    #message1{
+    text-align:center;
+    color: red;
+    }
+       /*
+    a{
+    padding:14px;
+    background-color:blue;
+    text-decoration:none;
+    color: black;
+    vertical-align:middle;
+    margin-left:60px;
+    border-radius:6px;
+    }
+       /*
+    a:hover{
+    background-color:green;
+    color: white;
+    }
+ */

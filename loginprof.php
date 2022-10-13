@@ -24,7 +24,7 @@
 		else{
 			$_SESSION["autoriser"]="oui";
 			$_SESSION["nomPrenom"]=strtoupper($tab[0]["nom"]." ".$tab[0]["prenom"]);
-			$message.="connection reussi";
+			header("location:page_employé.php");
 		}
 	}
 ?>
@@ -35,6 +35,7 @@
 	</head>
 	<body onLoad="document.fo.login.focus()">
 		<header>
+        <?php include("nav1.php"); ?>
 			<?php if(!empty($message)){ ?>
 		<div id="message"><?php echo $message ?></div>
 		<?php } ?>

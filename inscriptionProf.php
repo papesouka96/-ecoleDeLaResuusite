@@ -42,7 +42,7 @@
 				else{ 
 					$ins=$pdo->prepare("insert into employe(date,nom,prenom,email,statut,adresse,login,pass,daten) values(now(),?,?,?,?,?,?,?,?)");
 					$ins->execute(array($nom,$prenom,$email,$statut,$adresse,$login,$pass,$daten));
-					$message1.="Inscription  reussi veuillez Cliquez ici pour se connecter";
+					header("location:loginprof.php");
 				} 
 			}
 		}
@@ -51,22 +51,25 @@
 <!DOCYTPE html>
 <html>
 	<head>
-          
-		
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" href="styleProf.css"> 
+
 	</head>
+	<header><?php include("nav1.php"); ?></header>
 	<body>
 		
 		<div class="containt">
 		
-                       <h1>Inscription Employé</h1>
+                       <h2>Inscription Employé</h2>
 					   <?php 
         if(!empty($message1)){ ?>
 		<a href="login.php" id="message"><?php echo $message1 ?> </a>
 		<?php } 
         ?>
-		<form name="fo" method="post" action="" enctype="multipart/form-data">
-			<div class="label">Nom</div>
+		<form  name="fo" method="post" action="" enctype="multipart/form-data">
+			<div  class="label">Nom</div>
 			<input type="text" name="nom"  value= "<?php echo $nom ?>"  />
 			<div class="label">Prénom</div>
 			<input type="text" name="prenom" value= "<?php echo $prenom ?> " />

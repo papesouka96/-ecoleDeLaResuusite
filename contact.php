@@ -9,27 +9,9 @@
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <title>Contact</title>
 </head>
-
+<?php include("nav1.php"); ?>
 <body>
-
-
   <!--CEUX QUE J'AI MIS EN COMMENTAIRE C'EST QUI DOIT ETRE SUR LES AUTRES PAGES-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <!--div class="container-fluid" >
         <div class="container-fluid">
             <div class="row">
@@ -79,9 +61,6 @@
             </div>
             </nav>
          </div-->
-
-
-
   <!--PARTIE POUR FATIMA-->
   <div class="container">
     <div>
@@ -90,9 +69,7 @@
     <form action="mail.php" method="post">
       <div class="row">
         <div class="col-md-7 shadow rounded p-5">
-
           <div class="row">
-
             <div class="col mb-3">
               <label class="form-label" for="">Nom </label>
               <input type="text" class="form-control" placeholder="Nom " name="nom">
@@ -101,7 +78,6 @@
               <label class="form-label" for=""> Prenom</label>
               <input type="text" class="form-control" placeholder=" Prenom" name="prenom">
             </div>
-
           </div>
           <div class=" mb-3">
             <label class="form-label" for="">Email</label>
@@ -119,22 +95,14 @@
         </div>
         <div class="col-md-5 bg-white ">
           <div class="ml-5">
-            <img src="./img/ecole.png" alt="logo" class="rounded img-fluid">
+            <img src="image/ecole.png" alt="logo" class="rounded img-fluid">
           </div>
         </div>
       </div>
-
     </form>
-
-
   </div>
-
 <!--FIN DE LA PARTIE POUR FATIMA-->
-
-
   <!--/div-->
   <!--/div-->
-
 </body>
-
 </html>
