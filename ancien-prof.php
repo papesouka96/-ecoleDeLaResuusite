@@ -28,7 +28,7 @@ $people = $statement->fetchAll(PDO::FETCH_OBJ);
 
           
 
-          <th style="text-align:center">Action</th>
+          <!--th style="text-align:center">Action</th-->
         </tr>
         <?php foreach($people as $person): ?>
           <tr>
@@ -40,10 +40,10 @@ $people = $statement->fetchAll(PDO::FETCH_OBJ);
             <td><?= $person->adresse; ?></td>
             <td><?= $person->login; ?></td>
             <td><?= $person->daten; ?></td>
-            <td>
-              <a href="edit.php?id=<?= $person->id ?>" class="btn btn-info">Edit</a>
-              <a onclick="return confirm('Etes vous sur de supprimer ce professeur')" href="delete.php?id=<?= $person->id ?>" class='btn btn-danger'>Delete</a>
-            </td>
+            <!--td>
+              <a href="edit.php?id=<--?= $person->id ?>" class="btn btn-info">Edit</a>
+              <a onclick="return confirm('Etes vous sur de supprimer ce professeur')" href="delete.php?id=<--?= $person->id ?>" class='btn btn-danger'>Delete</a>
+            </td-->
           </tr>
         <?php endforeach; ?>
       </table>

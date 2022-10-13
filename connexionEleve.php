@@ -22,7 +22,8 @@ if(isset($_POST["login"],$_POST["motdepass"])){
     {
         $_SESSION["autoriser"]="oui";
         $_SESSION["nomPrenom"]=strtoupper($tab[0]["nom"]." ".$tab[0]["prenom"]);
-        header("location:page_eleve.php");
+        $message.="connection reussi";
+        header("Location: page_eleve.php");
         
     }
     else{
@@ -46,12 +47,8 @@ if(isset($_POST["login"],$_POST["motdepass"])){
 <body>
 
     <div class="forminsc" id="formConn">
-        <div class="form-text">Connexion</div>
-        <header>
-            <?php if(!empty($message)){ ?>
-        <div class="mess"><a href="page_eleve.php"><?php echo $message ?></a></div>
-        <?php } ?>
-        </header>
+        <div class="formc-text">Connexion</div>
+        
         <div class="form-saisie" id="formC-saisie">
             <form method="post" action="">
               <span>Nom d'utilisateur</span>

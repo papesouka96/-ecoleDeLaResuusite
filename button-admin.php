@@ -37,10 +37,6 @@ session_start();
 <div class="container" style="display:flex; padding-top:450px; padding-left:396px">
   <div class="col-45">
   <button type="submit" class="btn btn-primary btn-lg" ><a href="new&precdprof.php" style="color:white;text-decoration:none">Gestion Professeurs</a> </button>
-
-
-  
-
   <button type="submit" class="btn btn-secondary btn-lg"><a href="./AdminEleve/new&precdelev.php" style="color:white;text-decoration:none">Gestion Eleve</a></button>
 </div>
 
