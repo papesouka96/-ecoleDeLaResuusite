@@ -31,7 +31,7 @@
                 STATUS_EMPLOYER
                 </a>
                 <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item text-dark" href="fichier.php">Administrateur</a>
+                <a class="dropdown-item text-dark" href="button-admin.php">Administrateur</a>
                 <a class="dropdown-item text-dark" href="#">Enseignant</a>
                 <a class="dropdown-item text-dark" href="#">Professeur</a>
               

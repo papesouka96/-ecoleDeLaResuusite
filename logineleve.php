@@ -3,7 +3,7 @@
   error_reporting(E_ALL); 
 	session_start();
 	@$login=$_POST["login"];
-	@$pass=$_POST["pass"];
+	@$motdepass=$_POST["motdepass"];
 	@$valider=$_POST["valider"];
 	$message="";
 	$message2="";
@@ -15,16 +15,16 @@
 		catch(PDOException $e){
 			echo $e->getMessage();
 		}
-		$res=$pdo->prepare("select * from employe where login=? and pass=? limit 2");
+		$res=$pdo->prepare("select * from eleve where login=? and motdepass=? limit 2");
 		$res->setFetchMode(PDO::FETCH_ASSOC);
-		$res->execute(array($login,$pass));
+		$res->execute(array($login,$motdepass));
 		$tab=$res->fetchAll();
 		if(count($tab)==1)
 			$message2="<li>Mauvais login ou mot de passe!</li>";
 		else{
 			$_SESSION["autoriser"]="oui";
 			$_SESSION["nomPrenom"]=strtoupper($tab[1]["nom"]." ".$tab[0]["prenom"]);
-			header("location:page_employé.php");
+			header("location:page_eleve.php");
 		}
 	}
 ?>
@@ -42,7 +42,7 @@
 		
 		</header>
 		<div class="containt">
-		       <h1>Authentification</h1>
+		       <h1>connexion</h1>
 		<form name="fo" method="post" action="">
 			<div class="label">Login</div>
 			<input type="text" name="login" value="<?php echo $login?>" />

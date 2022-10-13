@@ -1,37 +1,32 @@
 <?php
-session_start();
+  ini_set("display_errors", "-1");
+  error_reporting(E_ALL);
  include ("nav1.php");
-include_once('bd.php');
-if(isset($_POST["login"],$_POST["motdepass"])){
-    
-    
-    @$motdepass=$_POST["motdepass"];
-    @$login=$_POST["login"];
-   // @$repass=$_POST["repass"];
-    $res=$pdo->prepare("select * from eleve where login=:login and motdepass=:motdepass ");
-    $res->setFetchMode(PDO::FETCH_ASSOC);
-   // $res->execute(array($login,$motdepass));
-   $res->execute(array(
-        "login" => @$login,
-        "motdepass" => @$motdepass
-   ));
+@$login=$_POST["login"];
+	@$motdepass=$_POST["motdepass"];
+	@$valider=$_POST["valider"];
+	$message="";
+	$message1="";
+	if(isset($valider)){
 
-    $tab=$res->fetchAll();
-    
-    if(count($tab)>0)
-    {
-        $_SESSION["autoriser"]="oui";
-        $_SESSION["nomPrenom"]=strtoupper($tab[0]["nom"]." ".$tab[0]["prenom"]);
-        // $message.="connection reussi";
-        header("Location: page_eleve.php");
-        
-    }
-    else{
-        $message1="<li>Mauvais login ou mot de passe!</li>";
-        
-    }
-}
-
+		try{
+			$pdo=new PDO("mysql:host=localhost;dbname=papa","root","");
+		}
+		catch(PDOException $e){
+			echo $e->getMessage();
+		}
+		$res=$pdo->prepare("select * from eleve where login=? and motdepass=? limit 1");
+		$res->setFetchMode(PDO::FETCH_ASSOC);
+		$res->execute(array($login,$motdepass));
+		$tab=$res->fetchAll();
+		if(count($tab)==0)
+			$message1="<li>Mauvais login ou mot de passe!</li>";
+		else{
+		/* 	$_SESSION["autoriser"]="oui";
+			$_SESSION["nomPrenom"]=strtoupper($tab[0]["nom"]." ".$tab[0]["prenom"]); */
+			header("location:page_employé.php");
+		}
+	}
 
 ?>
 <!DOCTYPE html>

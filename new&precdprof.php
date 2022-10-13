@@ -36,7 +36,7 @@ session_start();
 
 <div class="container" style="display:flex; padding-top:450px; padding-left:396px">
   <div class="col-45">
-  <button type="submit" class="btn btn-primary btn-lg" ><a href="index.php" style="color:white;text-decoration:none">Nouveau Prof</a> </button>
+  <button type="submit" class="btn btn-primary btn-lg" ><a href="fichier.php" style="color:white;text-decoration:none">Nouveau Prof</a> </button>
 
 
   
