@@ -11,7 +11,9 @@ if (isset ($_POST['nom']) && isset($_POST['prenom'])  && isset($_POST['email']) 
   $pass = $_POST['pass'];
   $daten = $_POST['daten'];
   //////Controle de saisie///////
-  if(empty($nom)) $message="<li>Non invalide!</li>";
+  if (isset($valider)){
+
+    if(empty($nom)) $message="<li>nom invalide!</li>";
   if(empty($lastname)) $message.="<li>Prénom invalide!</li>";
  
   if(empty($email) or !filter_var($email,FILTER_VALIDATE_EMAIL)) $message.="<li>email non valide!</li>";
@@ -19,6 +21,9 @@ if (isset ($_POST['nom']) && isset($_POST['prenom'])  && isset($_POST['email']) 
   if(empty($adresse)) $message.="<li>adresse invalide!</li>";
   if(empty($login)) $message.="<li>Login invalide!</li>";
   if(empty($pass)) $message.="<li>Mot de passe invalide!</li>";
+
+  }
+  
   ////////////////////////////////////////
   $sql = 'INSERT INTO employe(date,nom,prenom,email,statut,adresse,login,pass,daten,etat) VALUES(now(),:nom, :prenom,:email,:statut,:adresse,:login,:pass,:daten, :etat)';
   $statement = $connection->prepare($sql);
