@@ -64,11 +64,10 @@ if (isset($valider)) {
             $ins=$pdo->prepare("insert into eleve(date,nom,prenom,daten,lieun,classe,cycle,login,motdepass,email,etat) values(now(),?,?,?,?,?,?,?,?,?,0)");
             $ins->execute(array($nom,$prenom,$daten,$lieun,$classe,$cycle,$login,$motdepass,$email));
             header("location:loginprof.php");
-				} 
         }
     }
-
-?>
+}
+ ?>
 ?>
 
 <!DOCTYPE html>
@@ -87,7 +86,7 @@ if (isset($valider)) {
         <div class="form-text">Inscription</div>
         <?php
         if(!empty($message1)){ ?>
-         <a href="connexionEleve.php" id="Alerte"><?php echo $message1 ?> </a>
+         <a href="connect.php" id="Alerte"><?php echo $message1 ?> </a>
          <?php }
         ?>
         <div class="form-saisie">
