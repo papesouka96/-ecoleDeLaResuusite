@@ -30,7 +30,7 @@ form{
 {
     width: 800px;
     height: 590px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: #1E444Fff;
     position: absolute;
     margin: auto;
     top: 0;
@@ -38,6 +38,8 @@ form{
     right: 0;
     bottom: 0;
     padding: 30px;
+    border-bottom: 4px solid blue;
+    border-top: 4px solid blue;
     /* border-top: 4px solid #48cb49;
     border-bottom: 4px solid #48cb49; */
     box-shadow:  0 0 10px #000;
@@ -93,7 +95,7 @@ form{
 .form-saisie input[type="submit"].btnInsc
 {
     width: 50%;
-    background-color: #48cb49;
+    background-color: blue;
     font-size: 18px;
     color: #fff;
     margin: 209 0;
@@ -151,6 +153,13 @@ form{
     margin-left: 56px;
    
     
+}
+
+.form-saisie input[type="submit"].btnConn:hover
+{
+    background-color: orange;
+    color: #ececf0;
+    transform:0.3s translateY(-6);
 }
 
 #formConn
