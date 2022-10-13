@@ -24,7 +24,7 @@ session_start();
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="index.php">Acceuil <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="fichier2.php">Acceuil <span class="sr-only">(current)</span></a>
       </li>
 
       
@@ -36,7 +36,7 @@ session_start();
 
 <div class="container" style="display:flex; padding-top:450px; padding-left:396px">
   <div class="col-45">
-  <button type="submit" class="btn btn-primary btn-lg" ><a href="index.php" style="color:white;text-decoration:none">Nouveau elev</a> </button>
+  <button type="submit" class="btn btn-primary btn-lg" ><a href="fichier2.php" style="color:white;text-decoration:none">Nouveau elev</a> </button>
 
 
   

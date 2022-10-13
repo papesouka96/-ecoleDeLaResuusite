@@ -23,7 +23,8 @@ if (isset ($_POST['nom']) && isset($_POST['prenom'])  && isset($_POST['email']) 
   $sql = 'INSERT INTO employe(date,nom,prenom,email,statut,adresse,login,pass,daten,etat) VALUES(now(),:nom, :prenom,:email,:statut,:adresse,:login,:pass,:daten, :etat)';
   $statement = $connection->prepare($sql);
   if ($statement->execute([':nom' => $name, ':prenom' => $lastname,':email' => $email, ':statut' => $statut, ':adresse' => $adresse  ,':login' => $login, ':pass'=>$pass, ':daten' => $daten ,':etat'=>0 ])) {
-    $message = 'Inserer avec succés';
+   /*  $message = 'Inserer avec succés'; */
+   header("Location: fichier.php");
   }
 
 
