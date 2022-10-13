@@ -22,7 +22,7 @@ if(isset($_POST["login"],$_POST["motdepass"])){
     {
         $_SESSION["autoriser"]="oui";
         $_SESSION["nomPrenom"]=strtoupper($tab[0]["nom"]." ".$tab[0]["prenom"]);
-        $message.="connection reussi";
+        // $message.="connection reussi";
         header("Location: page_eleve.php");
         
     }
